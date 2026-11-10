@@ -12,6 +12,94 @@ Use landmarks as natural position labels, such as “museum entrance, Great Russ
 
 Naming roads, junctions and points of interest as you play provides incidental Knowledge of London practice. It carries no score, bonus or penalty.
 
+## Google Earth Web character cards
+
+To use a placemark as a miniature on the 3D map, open a Google Earth Web project on your laptop, add a placemark, and open the HTML editor for its description. Paste the complete snippet for your display mode, then save the placemark. Edit the name, role, stats and weapon in the snippet for each miniature. The Soldier values below are examples for testing the card layout.
+
+### Light mode
+
+```html
+<div style="max-width:270px; background:#f1f3e9; border:1px solid #495447; border-radius:8px; overflow:hidden; font-family:Arial,sans-serif;">
+  <div style="background:#344432; padding:12px 14px;">
+    <div style="font-size:10px; letter-spacing:2px; color:#d6e5cd;">
+      XLONDON / SQUAD 01
+    </div>
+    <div style="font-size:22px; font-weight:bold; color:#ffffff; margin-top:3px;">
+      Soldier
+    </div>
+    <div style="font-size:12px; color:#e0ebd9;">
+      Rifleman · S-01
+    </div>
+  </div>
+
+  <div style="padding:12px 14px;">
+    <table style="width:100%; border-collapse:collapse; text-align:center;">
+      <tr style="font-size:10px; letter-spacing:1px;">
+        <th style="color:#40513b;" scope="col">HP</th>
+        <th style="color:#40513b;" scope="col">MOVE</th>
+        <th style="color:#40513b;" scope="col">ACTION</th>
+        <th style="color:#40513b;" scope="col">AIM</th>
+      </tr>
+      <tr style="font-size:20px; font-weight:bold;">
+        <td style="color:#172017;">4</td>
+        <td style="color:#172017;">2</td>
+        <td style="color:#172017;">2</td>
+        <td style="color:#172017;">+1</td>
+      </tr>
+    </table>
+
+    <div style="border-top:1px solid #b8c1ad; margin-top:10px; padding-top:9px; font-size:12px;">
+      <strong style="color:#172017;">Assault rifle</strong><br>
+      <span style="color:#40513b;">Medium range · 1 damage</span>
+    </div>
+  </div>
+</div>
+```
+
+### Dark mode
+
+The dark wrapper fills the white description area around the card. The `356px` width and `-16px` margin matched the tested Google Earth Web popup on the laptop. If the popup is a different width, adjust the wrapper width to match. The stat panel stays light for readability.
+
+```html
+<div style="background:#191b19; margin:-16px; padding:16px; width:356px; box-sizing:border-box;">
+  <div style="max-width:270px; background:#f1f3e9; border:1px solid #495447; border-radius:8px; overflow:hidden; font-family:Arial,sans-serif;">
+    <div style="background:#344432; padding:12px 14px;">
+      <div style="font-size:10px; letter-spacing:2px; color:#d6e5cd;">
+        XLONDON / SQUAD 01
+      </div>
+      <div style="font-size:22px; font-weight:bold; color:#ffffff; margin-top:3px;">
+        Soldier
+      </div>
+      <div style="font-size:12px; color:#e0ebd9;">
+        Rifleman · S-01
+      </div>
+    </div>
+
+    <div style="padding:12px 14px;">
+      <table style="width:100%; border-collapse:collapse; text-align:center;">
+        <tr style="font-size:10px; letter-spacing:1px;">
+          <th style="color:#40513b;" scope="col">HP</th>
+          <th style="color:#40513b;" scope="col">MOVE</th>
+          <th style="color:#40513b;" scope="col">ACTION</th>
+          <th style="color:#40513b;" scope="col">AIM</th>
+        </tr>
+        <tr style="font-size:20px; font-weight:bold;">
+          <td style="color:#172017;">4</td>
+          <td style="color:#172017;">2</td>
+          <td style="color:#172017;">2</td>
+          <td style="color:#172017;">+1</td>
+        </tr>
+      </table>
+
+      <div style="border-top:1px solid #b8c1ad; margin-top:10px; padding-top:9px; font-size:12px;">
+        <strong style="color:#172017;">Assault rifle</strong><br>
+        <span style="color:#40513b;">Medium range · 1 damage</span>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
 ## Core rules
 
 | Rule | Working version |
