@@ -100,6 +100,17 @@ The dark wrapper fills the white description area around the card. The `356px` w
 </div>
 ```
 
+## Five Parsecs from Home playtest
+
+The laptop-based playtest uses Google Earth for terrain and *Five Parsecs from Home* for combat. Treat this as a separate rules option from the provisional XLondon rules below.
+
+- [Standalone combat reference](docs/five-parsecs-combat-reference.pdf) includes deployment, initiative, line of sight, shooting, brawling, saves, enemy behaviour, objectives and weapon and gear tables. It also includes an Acquire mission with four operatives and three alien patrol figures.
+- [Campaign rules reference](docs/five-parsecs-from-home-srd.md) covers crew creation, the campaign turn, encounter generation and post-battle consequences.
+
+For the neighbourhood-scale trial, use **50 metres per tabletop inch** throughout. A standard 4-inch move is **200 m**, the 6-inch close-fire threshold is **300 m**, and the 3-inch target-priority radius is **150 m**. Measure movement along the actual route and shots in a straight line. Use Street View to judge cover and line of sight.
+
+In this mode, track **Reactions, Speed, Combat Skill, Toughness, Savvy and Stun**. Play Quick crew actions, then enemy actions, then Slow crew actions. Use the dashboard for dice and round tracking. Its Health and action counters belong to the earlier XLondon rules.
+
 ## Core rules
 
 | Rule | Working version |
